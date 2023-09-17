@@ -1,0 +1,6 @@
+{
+    "tailwindCSS.rootFontSize": 14,
+    "cSpell.words": [
+        "tailwindcss"
+    ] // Default: 16
+}
