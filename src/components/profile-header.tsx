@@ -16,7 +16,7 @@ const ProfileHeader = () => {
         />
       </div>
       <div className="profile-title">
-        <h1 className="text-2xl drop-shadow text-center">
+        <h1 className="text-3xl drop-shadow text-center">
           <span className="text-blue-500">Yuji</span> Kurokawa
         </h1>
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center">

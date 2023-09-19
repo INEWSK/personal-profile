@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     "Mobile Application Developer",
     "Photographer",
   ],
-  viewport: "width=device-width, initial-scale=1.0",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  },
   creator: "Yuji Kurokawa",
   publisher: "Yuji Kurokawa",
   icons: {
@@ -37,8 +41,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/assets/images/avatar.jpg",
-        width: 512,
-        height: 512,
+        width: 400,
+        height: 400,
         alt: "avatar",
       },
     ],
@@ -52,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} data-theme="dark">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

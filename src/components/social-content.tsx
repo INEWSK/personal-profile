@@ -28,18 +28,18 @@ const socialItems = [
 
 const SocialContent = () => {
   return (
-    <div className="flex space-x-4">
-      {socialItems.map((button) => (
+    <div className="flex space-x-4 flex-wrap items-center justify-center">
+      {socialItems.map((item, i) => (
         <Button
           asChild
-          key={button.label}
+          key={item.label}
           className="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-          title={button.label}
+          title={item.label}
           variant={"ghost"}
         >
-          <a href={button.url} className="flex gap-2">
-            {React.createElement(button.icon, { className: "w-4 h-4" })}
-            {button.label}
+          <a href={item.url} className="flex gap-2">
+            {React.createElement(item.icon, { className: "w-4 h-4" })}
+            {item.label}
           </a>
         </Button>
       ))}

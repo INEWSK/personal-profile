@@ -23,14 +23,16 @@ export default function Home() {
       <div className="flex h-16 items-center justify-end px-4">
         <MainNav />
       </div>
-      <div className="flex flex-col flex-1 gap-8 items-center justify-center">
+      <div className="flex flex-col flex-1 gap-8 items-center justify-center p-4">
         <ProfileHeader />
         {components.map((component, i) => (
           <SectionWrapper key={i} text={component.label}>
             {React.createElement(component.node)}
           </SectionWrapper>
         ))}
-        <div className="flex gap-4"></div>
+        <p className="text-sm text-center text-gray-400 dark:text-gray-500">
+          This page is under construction.
+        </p>
       </div>
       <MainFooter />
     </main>
