@@ -66,10 +66,35 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        // heartbeat keyframes
+        heartbeat: {
+          "0%": {
+            transform: "scale(1)",
+            transformOrigin: "center center",
+            animationTimingFunction: "ease-out",
+          },
+          "5%": {
+            transform: "scale(0.9)",
+            animationTimingFunction: "ease-in",
+          },
+          "11%": {
+            transform: "scale(1)",
+            animationTimingFunction: "ease-out",
+          },
+          "17%": {
+            transform: "scale(0.9)",
+            animationTimingFunction: "ease-in",
+          },
+          "33%": {
+            transform: "scale(1)",
+            animationTimingFunction: "ease-out",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        heartbeat: "heartbeat 2s ease-in-out infinite",
       },
     },
   },

@@ -20,9 +20,7 @@ const components = [
 export default function Home() {
   return (
     <main className="flex flex-col h-screen">
-      <div className="flex h-16 items-center justify-end px-4">
-        <MainNav />
-      </div>
+      <MainNav />
       <div className="flex flex-col flex-1 gap-8 items-center justify-center p-4">
         <ProfileHeader />
         {components.map((component, i) => (

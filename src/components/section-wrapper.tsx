@@ -6,7 +6,7 @@ const SectionWrapper = ({
   className,
   children,
 }: {
-  text?: string;
+  text: string;
   className?: React.HTMLAttributes<HTMLElement>["className"];
   children?: React.ReactNode;
 }) => {
