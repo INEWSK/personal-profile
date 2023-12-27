@@ -2,9 +2,9 @@ import LinkContent from "@/components/link-content";
 import MainFooter from "@/components/main-footer";
 import MainNav from "@/components/main-nav";
 import ProfileHeader from "@/components/profile-header";
-import SectionWrapper from "@/components/section-wrapper";
 import SocialContent from "@/components/social-content";
-import React from "react";
+import Divider from "@/components/ui/divider";
+import { createElement } from "react";
 
 const components = [
   {
@@ -24,9 +24,10 @@ export default function Home() {
       <div className="flex flex-col flex-1 gap-8 items-center justify-center p-4">
         <ProfileHeader />
         {components.map((component, i) => (
-          <SectionWrapper key={i} text={component.label}>
-            {React.createElement(component.node)}
-          </SectionWrapper>
+          <section key={component.label} id={component.label.toLowerCase()}>
+            <Divider text={component.label} />
+            {createElement(component.node)}
+          </section>
         ))}
         <p className="text-sm text-center text-gray-400 dark:text-gray-500">
           This page is under construction.

@@ -3,7 +3,7 @@ import React from "react";
 import { FaFileContract, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Button } from "./ui/button";
 
-const linkItems = [
+const items = [
   {
     label: "LinkedIn",
     icon: FaLinkedin,
@@ -24,7 +24,7 @@ const linkItems = [
 const LinkContent = () => {
   return (
     <div className="flex space-x-4">
-      {linkItems.map((item) => (
+      {items.map((item) => (
         <Button
           asChild
           key={item.label}

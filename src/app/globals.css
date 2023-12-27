@@ -73,4 +73,8 @@
   span {
     @apply cursor-default;
   }
+
+  section {
+    @apply flex flex-col gap-2;
+  }
 }

@@ -5,7 +5,7 @@ export const constants = {
   TWITTER_URL: "https://twitter.com/airlues",
   GITHUB_URL: "https://github.com/inewsk",
   RESUME_URL: "https://cv.inewsk.me",
-  BLOG_URL: "https://blog.inewsk.me",
+  BLOG_URL: "https://inewsk.me",
   TELEGRAM_URL: "https://t.me/inewsk",
   DISCORD_URL: "https://discordapp.com/users/301764095743361024",
   LINKEDIN_URL: "https://www.linkedin.com/in/yik-chun-yuen-613351211/",
@@ -14,7 +14,7 @@ export const constants = {
 export const metaProps = {
   title: "Yuji Kurokawa",
   description:
-    "a programmer who are producing useless code for fun, interested in web development / mobile phone photographer",
+    "A programmer who are producing useless code for fun, interested in web development / mobile phone photographer",
   applicationName: "Yuji Kurokawa",
   authors: {
     name: "Yuji Kurokawa",

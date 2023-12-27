@@ -7,7 +7,7 @@ const MainFooter = () => {
       <p className="flex items-center gap-2">
         Made with
         <span className="animate-heartbeat">
-          <FaHeart color="#ff0000" />
+          <FaHeart color="#d43f57" />
         </span>
         by YK
       </p>

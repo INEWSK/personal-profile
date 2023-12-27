@@ -1,5 +1,5 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import { metaProps } from "@/constants";
+import { ThemeProvider } from "@/lib/ThemeProvider";
 import type { Metadata } from "next";
 import { roboto } from "./fonts";
 import "./globals.css";

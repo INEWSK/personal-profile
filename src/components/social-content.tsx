@@ -3,7 +3,7 @@ import React from "react";
 import { FaDiscord, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import { Button } from "./ui/button";
 
-const socialItems = [
+const items = [
   {
     label: "Instagram",
     icon: FaInstagram,
@@ -29,7 +29,7 @@ const socialItems = [
 const SocialContent = () => {
   return (
     <div className="flex space-x-4 flex-wrap items-center justify-center">
-      {socialItems.map((item, i) => (
+      {items.map((item) => (
         <Button
           asChild
           key={item.label}

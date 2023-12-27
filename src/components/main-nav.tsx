@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeToggle } from "./theme-toggle";
 
-const MainNav = ({ className }: React.HTMLAttributes<HTMLElement>) => {
+const MainNav = () => {
   return (
     <nav className="flex h-16 items-center justify-end px-4">
       <ThemeToggle />
