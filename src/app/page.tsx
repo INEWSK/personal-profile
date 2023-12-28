@@ -1,6 +1,6 @@
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import LinkContent from "@/components/link-content";
-import MainFooter from "@/components/main-footer";
-import MainNav from "@/components/main-nav";
 import ProfileHeader from "@/components/profile-header";
 import SocialContent from "@/components/social-content";
 import Divider from "@/components/ui/divider";
@@ -20,7 +20,7 @@ const components = [
 export default function Home() {
   return (
     <main className="flex flex-col h-screen">
-      <MainNav />
+      <Header />
       <div className="flex flex-col flex-1 gap-8 items-center justify-center p-4">
         <ProfileHeader />
         {components.map((component, i) => (
@@ -33,7 +33,7 @@ export default function Home() {
           This page is under construction.
         </p>
       </div>
-      <MainFooter />
+      <Footer />
     </main>
   );
 }

@@ -1,7 +1,6 @@
-import React from "react";
 import { ThemeToggle } from "./theme-toggle";
 
-const MainNav = () => {
+const Header = () => {
   return (
     <nav className="flex h-16 items-center justify-end px-4">
       <ThemeToggle />
@@ -9,4 +8,4 @@ const MainNav = () => {
   );
 };
 
-export default MainNav;
+export default Header;

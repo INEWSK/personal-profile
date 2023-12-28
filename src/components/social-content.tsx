@@ -1,6 +1,11 @@
 import { constants } from "@/constants";
-import React from "react";
-import { FaDiscord, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
+import { createElement } from "react";
+import {
+  FaDiscord,
+  FaInstagram,
+  FaParagraph,
+  FaTelegram,
+} from "react-icons/fa";
 import { Button } from "./ui/button";
 
 const items = [
@@ -10,9 +15,9 @@ const items = [
     url: constants.INS_URL,
   },
   {
-    label: "Twitter",
-    icon: FaTwitter,
-    url: constants.TWITTER_URL,
+    label: "Blog",
+    icon: FaParagraph,
+    url: constants.BLOG_URL,
   },
   {
     label: "Telegram",
@@ -38,7 +43,7 @@ const SocialContent = () => {
           variant={"ghost"}
         >
           <a href={item.url} className="flex gap-2">
-            {React.createElement(item.icon, { className: "w-4 h-4" })}
+            {createElement(item.icon, { className: "w-4 h-4" })}
             {item.label}
           </a>
         </Button>

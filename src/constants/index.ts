@@ -47,8 +47,8 @@ export const metaProps = {
     images: [
       {
         url: "/assets/images/avatar.jpg",
-        width: 400,
-        height: 400,
+        width: 360,
+        height: 360,
         alt: "avatar",
       },
     ],
